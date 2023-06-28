@@ -1,98 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Donasi</title>
-  <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
-    }
-    
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background: linear-gradient(to bottom, #e1e1e1, #f9f9f9);
-      border-radius: 8px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .form-group {
-      margin-bottom: 20px;
-    }
-    
-    .form-group label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-      color: #555;
-    }
-    
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-      transition: border-color 0.3s ease-in-out;
-    }
-    
-    .form-group input[type="text"]:focus,
-    .form-group input[type="email"]:focus,
-    .form-group textarea:focus {
-      border-color: #888;
-    }
-    
-    .form-group textarea {
-      height: 80px;
-    }
-    
-    .form-group button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    .form-group button:hover {
-      background-color: #45a049;
-    }
-    
-    @media (max-width: 480px) {
-      .container {
-        max-width: 100%;
-      }
-    }
-  </style>
+  <title>Donation Page</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal -->
 </head>
+
 <body>
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit">Donasi Sekarang</button>
-      </div>
-    </form>
-  </div>
+  <header>
+    <h1>Donation Page</h1>
+  </header>
+
+  <main>
+    <section class="donation-form">
+      <h2>Make a Donation</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Donation Amount:</label>
+          <input type="number" id="amount" name="amount" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (optional):</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Donate</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Donation Page. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
