@@ -5,6 +5,13 @@ body {
         background-color: #f1f1f1;
       }
 
+header {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
       #wrapper {
         max-width: 600px;
         margin: 0 auto;
