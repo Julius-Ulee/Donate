@@ -27,7 +27,7 @@ main {
 .donation-form {
   max-width: 500px;
   margin: 0 auto;
-  background: #fff;
+  background: linear-gradient(to bottom, #e1e1e1, #f9f9f9);
   border-radius: 4px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
