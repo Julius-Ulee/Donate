@@ -1,2 +1,2 @@
 # Donate
-Support me
+Support me.
