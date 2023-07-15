@@ -1,2 +1,2 @@
 # Donate
-Support me for cookies.
+Support me for cookies!
